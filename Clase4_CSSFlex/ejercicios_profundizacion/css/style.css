@@ -1,0 +1,44 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+    /* se eliminan todos los margin por defecto */
+    margin: 0;
+    /* se eliminan todos los padding por defecto */
+    padding: 0; 
+    /* se elimina el estilo de las listas */
+    list-style-type: none;
+    /* el padding y border se consideran para calcular
+     el tamaño de la caja */
+    box-sizing: border-box;
+    /* se elimina el subrayado de los links <a> */
+    text-decoration: none
+}
+  
+/* el elemento contenedor principal */
+body, html {
+  height: 100%;
+}
+
+.contenedor {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  background-color: cornflowerblue;
+
+  font-size: 32px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  

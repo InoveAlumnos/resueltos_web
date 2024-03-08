@@ -1,0 +1,45 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+    /* se eliminan todos los margin por defecto */
+    margin: 0;
+    /* se eliminan todos los padding por defecto */
+    padding: 0; 
+    /* se elimina el estilo de las listas */
+    list-style-type: none;
+    /* el padding y border se consideran para calcular
+     el tamaño de la caja */
+    box-sizing: border-box;
+    /* se elimina el subrayado de los links <a> */
+    text-decoration: none
+}
+  
+/* el elemento contenedor principal */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+}
+  
+header {
+  background-color: #2a2a2a;
+  padding-top: 10px;
+}
+
+/* fila de elementos del header */
+/* formado por una lista de elementos (ul) */ 
+header > nav > ul {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-nav-bar-top {
+  font-size: 0.9rem;
+  padding: 10px;
+  margin-left: 3em;
+  color: white;
+}
+  
+  
+  
